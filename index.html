@@ -3,238 +3,234 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sahil | Portfolio</title>
+
+<title>Sahil Kumar Singh | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-/* Reset */
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-/* Body */
 body{
-  background:linear-gradient(135deg,#020617,#0f172a,#020617);
-  color:white;
-  scroll-behavior:smooth;
+background:linear-gradient(135deg,#020617,#0f172a,#020617);
+color:white;
 }
 
-/* Navbar */
 header{
-  position:sticky;
-  top:0;
-  background:rgba(2,6,23,0.9);
-  backdrop-filter:blur(10px);
-  padding:15px 50px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:1000;
+position:sticky;
+top:0;
+background:rgba(2,6,23,0.95);
+backdrop-filter:blur(10px);
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
 }
 
 header h2{
-  color:#38bdf8;
+color:#38bdf8;
 }
 
 nav a{
-  color:white;
-  margin-left:25px;
-  text-decoration:none;
-  font-weight:500;
-  transition:0.3s;
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
 }
 
 nav a:hover{
-  color:#38bdf8;
+color:#38bdf8;
 }
 
-/* Hero */
 .hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 80px;
-  gap:50px;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 80px;
+gap:50px;
 }
 
 .hero-text{
-  flex:1;
-  animation:fadeInLeft 1.2s ease;
+flex:1;
 }
 
 .hero-text h1{
-  font-size:48px;
+font-size:44px;
 }
 
 .hero-text span{
-  color:#38bdf8;
+color:#38bdf8;
 }
 
 .hero-text p{
-  margin:20px 0;
-  line-height:1.7;
-  color:#cbd5e1;
+margin:20px 0;
+line-height:1.7;
+color:#cbd5e1;
+max-width:600px;
 }
 
 .btn{
-  display:inline-block;
-  background:linear-gradient(45deg,#38bdf8,#0ea5e9);
-  color:black;
-  padding:14px 30px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
+display:inline-block;
+background:linear-gradient(45deg,#38bdf8,#0ea5e9);
+color:black;
+padding:12px 28px;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
 }
 
 .btn:hover{
-  box-shadow:0 0 15px #38bdf8,0 0 30px #38bdf8;
-  transform:scale(1.05);
+box-shadow:0 0 15px #38bdf8,0 0 30px #38bdf8;
+transform:scale(1.05);
 }
 
-/* Image */
 .hero-img{
-  flex:1;
-  display:flex;
-  justify-content:center;
-  animation:fadeInRight 1.2s ease;
+flex:1;
+display:flex;
+justify-content:center;
 }
 
 .hero-img img{
-  width:260px;
-  height:260px;
-  border-radius:50%;
-  object-fit:cover;
-  border:4px solid #38bdf8;
-  box-shadow:0 0 30px rgba(56,189,248,0.6);
+width:240px;
+height:240px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #38bdf8;
+box-shadow:0 0 25px rgba(56,189,248,.6);
 }
 
-/* Sections */
 section{
-  padding:90px 60px;
+padding:90px 60px;
 }
 
 section h2{
-  text-align:center;
-  margin-bottom:50px;
-  color:#38bdf8;
-  font-size:32px;
+text-align:center;
+margin-bottom:50px;
+color:#38bdf8;
+font-size:32px;
 }
 
-/* Glass Card */
 .card{
-  background:rgba(255,255,255,0.05);
-  backdrop-filter:blur(15px);
-  border-radius:15px;
-  padding:30px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+border-radius:15px;
+padding:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
 }
 
-/* About */
 .about{
-  max-width:900px;
-  margin:auto;
-  text-align:center;
-  line-height:1.8;
-  color:#cbd5e1;
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.9;
+color:#cbd5e1;
 }
 
-/* Skills */
 .skills{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
-}
-
-.skill h4{
-  margin-bottom:10px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
 }
 
 .bar{
-  height:8px;
-  background:#020617;
-  border-radius:5px;
-  overflow:hidden;
+height:8px;
+background:#020617;
+border-radius:5px;
+overflow:hidden;
 }
 
 .bar span{
-  display:block;
-  height:100%;
-  background:#38bdf8;
+display:block;
+height:100%;
+background:#38bdf8;
 }
 
-/* Projects */
 .projects{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
 }
 
 .project{
-  transition:0.3s;
+text-align:center;
+transition:.3s;
+}
+
+.project img{
+width:70px;
+height:70px;
+object-fit:contain;
+margin-bottom:15px;
+background:white;
+padding:6px;
+border-radius:10px;
+}
+
+.project h3{
+margin:10px 0;
+color:#38bdf8;
+}
+
+.project p{
+font-size:14px;
+line-height:1.7;
+color:#cbd5e1;
+margin-bottom:10px;
+text-align:left;
 }
 
 .project:hover{
-  transform:translateY(-8px);
+transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(56,189,248,.4);
 }
 
-/* Contact */
 .contact{
-  max-width:500px;
-  margin:auto;
+max-width:500px;
+margin:auto;
 }
 
 .contact input,
 .contact textarea{
-  width:100%;
-  padding:12px;
-  margin:10px 0;
-  border:none;
-  border-radius:8px;
-  background:#020617;
-  color:white;
+width:100%;
+padding:12px;
+margin:10px 0;
+background:#020617;
+border:none;
+border-radius:8px;
+color:white;
 }
 
-/* Footer */
 footer{
-  text-align:center;
-  padding:25px;
-  background:#020617;
-  color:#94a3b8;
+text-align:center;
+padding:25px;
+background:#020617;
+color:#94a3b8;
 }
 
-/* Animations */
-@keyframes fadeInLeft{
-  from{opacity:0;transform:translateX(-40px);}
-  to{opacity:1;transform:translateX(0);}
-}
-
-@keyframes fadeInRight{
-  from{opacity:0;transform:translateX(40px);}
-  to{opacity:1;transform:translateX(0);}
-}
-
-/* Mobile */
 @media(max-width:900px){
 
 .hero{
-  flex-direction:column;
-  text-align:center;
-  padding:40px 20px;
+flex-direction:column;
+text-align:center;
+padding:40px 20px;
 }
 
 .hero-text h1{
-  font-size:36px;
+font-size:34px;
 }
 
 section{
-  padding:70px 20px;
+padding:70px 20px;
 }
 
 }
@@ -245,41 +241,42 @@ section{
 <body>
 
 <header>
-  <h2>Sahil</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+
+<h2>Sahil</h2>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
-<!-- Hero -->
 <div class="hero" id="home">
 
-  <div class="hero-text">
+<div class="hero-text">
 
-    <h1>Hi, I'm <span>Sahil Kumar Singh</span></h1>
-    <h1>Cloud, Data & Software Engineer</h1>
+<h1>Hi, I'm <span>Sahil Kumar Singh</span></h1>
+<h1>Cloud | Software | Database | Data Engineer</h1>
 
-    <p>
-      I am a passionate BCA student specializing in Cloud Computing,
-      Data Science, and Software Development. I focus on building
-      scalable, secure, and high-performance digital solutions.
-    </p>
+<p>
+BCA student passionate about Cloud Computing, Software Development,
+Database Engineering, and Data Analytics. Focused on building
+scalable, secure, and high-performance systems.
+</p>
 
-    <a href="Sahil-kr-cv.pdf" class="btn" download>Download Resume</a>
-
-  </div>
-
-  <div class="hero-img">
-    <img src="Your father.jpg" alt="Profile Photo">
-  </div>
+<a href="Sahil-kr-cv.pdf" class="btn" download>Download Resume</a>
 
 </div>
 
-<!-- About -->
+<div class="hero-img">
+<img src="hello.png">
+</div>
+
+</div>
+
 <section id="about">
 
 <h2>About Me</h2>
@@ -287,85 +284,196 @@ section{
 <div class="card about">
 
 <p>
-I am a dedicated BCA student with strong interest in cloud
-infrastructure, data-driven systems, and software engineering.
-I enjoy solving real-world problems using modern tools and
-technologies.
+I am a motivated BCA student with strong interest in cloud infrastructure,
+software engineering, database systems, and data-driven applications.
+I enjoy working on real-world projects and solving complex problems.
 </p>
 
 <p>
-My career goal is to become a skilled cloud engineer and
-software developer who builds secure, efficient, and
-scalable applications.
+My expertise includes React development, AWS deployment,
+SQL database design, Power BI dashboards, and analytical reporting.
+</p>
+
+<p>
+My long-term goal is to grow as a Cloud Engineer, Software Engineer,
+Database Engineer, and Data Analyst in a professional organization.
+</p>
+
+<p>
+I believe in continuous learning, project-based development,
+and hands-on technical experience.
 </p>
 
 </div>
 
 </section>
 
-<!-- Skills -->
 <section id="skills">
 
-<h2>Skills</h2>
+<h2>Technical Skills</h2>
 
 <div class="skills">
 
-<div class="card skill">
-<h4>AWS & Cloud</h4>
+<div class="card">
+<h4>AWS & Cloud Computing</h4>
 <div class="bar"><span style="width:85%"></span></div>
 </div>
 
-<div class="card skill">
-<h4>Python/C/SQL</h4>
+<div class="card">
+<h4>React & Frontend</h4>
 <div class="bar"><span style="width:80%"></span></div>
 </div>
 
-<div class="card skill">
-<h4>Web Development/Full Stack</h4>
+<div class="card">
+<h4>Python Programming</h4>
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+<div class="card">
+<h4>C Programming</h4>
 <div class="bar"><span style="width:75%"></span></div>
 </div>
 
-<div class="card skill">
-<h4>Data Science/Anlytics</h4>
+<div class="card">
+<h4>SQL Databases</h4>
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+<div class="card">
+<h4>Power BI</h4>
 <div class="bar"><span style="width:70%"></span></div>
 </div>
 
-<div class="card skill">
-<h4>Power Shell Scripting</h4>
-<div class="bar"><span style="width:80%"></span></div>
+<div class="card">
+<h4>Data Analytics</h4>
+<div class="bar"><span style="width:75%"></span></div>
+</div>
+
+<div class="card">
+<h4>Machine Learning</h4>
+<div class="bar"><span style="width:65%"></span></div>
 </div>
 
 </div>
 
 </section>
 
-<!-- Projects -->
 <section id="projects">
 
-<h2>Projects</h2>
+<h2>My Projects</h2>
 
 <div class="projects">
 
 <div class="card project">
+
+<img src="HMS.png">
+
+<h3>Hospital Management System</h3>
+
+<p>
+A complete frontend-based hospital management system
+developed using React for managing large hospital operations.
+</p>
+
+<p>
+Core modules include patient records, doctor management,
+room and bed allocation, billing system, and revenue dashboard.
+</p>
+
+<p>
+The system focuses on modular UI design, scalability,
+and user-friendly workflow management.
+</p>
+
+<p><strong>Tech Stack:</strong> React, JavaScript, CSS, Vercel</p>
+
+<a href="https://hms-frontend-4v3l.vercel.app/" target="_blank" class="btn">Live Demo</a>
+
+</div>
+
+<div class="card project">
+
+<img src="Desk.png">
+
+<h3>Smart Desk Management System</h3>
+
+<p>
+A smart classroom and exam hall management system
+designed to automate seating and roll number display.
+</p>
+
+<p>
+Integrates LCD displays with centralized control
+for real-time exam information.
+</p>
+
+<p>
+Helps reduce manual errors and improves
+institutional efficiency.
+</p>
+
+<p><strong>Tech Stack:</strong> Embedded System, C, LCD Display</p>
+
+<a href="#" class="btn">View</a>
+
+</div>
+
+<div class="card project">
+
+<img src="Ele.png">
+
 <h3>Electric Bill Generator</h3>
-<p>Automated electricity billing system using programming logic.</p>
+
+<p>
+An automated electricity billing application
+for accurate consumption calculation.
+</p>
+
+<p>
+Implements slab-based tariff rules and
+digital invoice generation.
+</p>
+
+<p>
+Improves billing accuracy and efficiency.
+</p>
+
+<p><strong>Tech Stack:</strong> C, Logic Design</p>
+
+<a href="#" class="btn">View</a>
+
 </div>
 
 <div class="card project">
-<h3>Smart Desk System</h3>
-<p>LCD based smart desk system for exam management.</p>
-</div>
 
-<div class="card project">
-<h3>Digit Recognition</h3>
-<p>Machine learning model for handwritten digit recognition.</p>
+<img src="Ai.png">
+
+<h3>AI & Digit Recognition System</h3>
+
+<p>
+A machine learning based system for recognizing
+handwritten digits using trained models.
+</p>
+
+<p>
+Includes data preprocessing, model training,
+and accuracy optimization.
+</p>
+
+<p>
+Demonstrates practical ML workflow implementation.
+</p>
+
+<p><strong>Tech Stack:</strong> Python, ML, Data Processing</p>
+
+<a href="#" class="btn">View</a>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- Contact -->
 <section id="contact">
 
 <h2>Contact Me</h2>
@@ -375,7 +483,9 @@ scalable applications.
 <form action="https://formspree.io/f/xojlggaz" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required>
+
 <input type="email" name="email" placeholder="Your Email" required>
+
 <textarea name="message" rows="4" placeholder="Message" required></textarea>
 
 <button class="btn" type="submit">Send Message</button>
@@ -383,7 +493,10 @@ scalable applications.
 </form>
 
 <p style="margin-top:15px">
-GitHub: <a href="https://github.com/vishalrajput800" target="_blank" style="color:#38bdf8">github.com/username</a>
+GitHub :
+<a href="https://github.com/vishalrajput800" target="_blank" style="color:#38bdf8">
+github.com/vishalrajput800
+</a>
 </p>
 
 </div>
@@ -391,12 +504,10 @@ GitHub: <a href="https://github.com/vishalrajput800" target="_blank" style="colo
 </section>
 
 <footer>
+
 © 2026 Sahil Kumar Singh | All Rights Reserved
+
 </footer>
 
 </body>
 </html>
-
-
-
-
